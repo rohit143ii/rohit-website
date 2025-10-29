@@ -6,8 +6,8 @@ body {
 }
 
 header {
-  background: linear-gradient(90deg, #003cff, #0077ff);
-  color: #fff;
+  background: linear-gradient(90deg, #ffffff, #fafafa);
+  color: #000000;
   padding: 25px 0;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -203,34 +203,6 @@ section#news p {
   transition: background 0.3s;
 }
 
-.read-more:hover {
-  background-color: #0056b3;
-}
-/* Background images for each section */
-#news {
-  background: url("images/news.jpg") no-repeat center center/cover;
-  color: white;
-  padding: 60px 20px;
-}
-
-#love {
-  background: url("images/love.jpg") no-repeat center center/cover;
-  color: white;
-  padding: 60px 20px;
-}
-
-#gaming {
-  background: url("images/gaming.jpg") no-repeat center center/cover;
-  color: white;
-  padding: 60px 20px;
-}
-
-#tech {
-  background: url("images/tech.jpg") no-repeat center center/cover;
-  color: white;
-  padding: 60px 20px;
-}
-
 /* Text shadow for better visibility */
 #news h2, #love h2, #gaming h2, #tech h2,
 #news p, #love p, #gaming p, #tech p {
@@ -271,14 +243,17 @@ section#news p {
 .contact-form button {
   width: 100%;
   padding: 10px;
-  background: #007BFF;
-  color: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
 }
 
-.contact-form button:hover {
-  background: #0056b3;
 }
+background-image: url("images/news-bg.jpg");
+background-size: cover;
+background-position: center;
+color: white;
+padding: 40px 0;
