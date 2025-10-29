@@ -1,0 +1,284 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #dfe9ff;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(90deg, #003cff, #0077ff);
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffea00;
+}
+
+section {
+  background: #ffffff;
+  margin: 25px auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #0040ff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+footer {
+  background: #0d0d0d;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.hero {
+  background-image: url("images/hero.jpg"); /* <-- yahan photo ka naam dalna */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark layer for visibility */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.about {
+  background: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+/* Blog Section Fix */
+.blog {
+  background: white; /* Background white rahe */
+  color: black; /* Text black ho jaye */
+}
+
+.blog h2 {
+  color: #007bff; /* Heading (Latest Blog Posts) blue rahe */
+}
+
+.blog p {
+  color: black; /* Blog description black rahe */
+}
+
+.blog a {
+  color: #007bff; /* Read More button blue hi rahe */
+  text-decoration: none;
+  /* Smooth scrolling for navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover effects for nav links */
+nav ul li a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Section background colors alternation */
+section:nth-child(even) {
+  background: #f9f9f9;
+}
+section:nth-child(odd) {
+  background: #ffffff;
+}
+
+/* Footer style improvement */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+/* Fix for white text on white background in banner */
+header h1,
+header p {
+  color: #000; /* Black text */
+}
+/* Fix for white text inside banner section */
+section#news h2,
+section#news p {
+  color: #000; /* Text will be black */
+}
+.read-more {
+  display: inline-block;
+  background: #007BFF;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.read-more:hover {
+  background: #0056b3;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+/* Background images for each section */
+#news {
+  background: url("images/news.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 60px 20px;
+}
+
+#love {
+  background: url("images/love.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 60px 20px;
+}
+
+#gaming {
+  background: url("images/gaming.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 60px 20px;
+}
+
+#tech {
+  background: url("images/tech.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 60px 20px;
+}
+
+/* Text shadow for better visibility */
+#news h2, #love h2, #gaming h2, #tech h2,
+#news p, #love p, #gaming p, #tech p {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.contact-form {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
