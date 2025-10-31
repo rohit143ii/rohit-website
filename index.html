@@ -1,104 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Learn With Rohit</title>
-  <meta name="google-site-verification" content="ti9x-unIwjGWukWKA_ecaTboBd2Ti65HWJpNJ3QsYSo" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    iframe {
+      border: none;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
 </head>
 <body>
-  <section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to My Website</h1>
-    <p>Stay updated with the latest content!</p>
-  </div>
-</section>
-  <header>
-  background-image: url("images/news-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 40px 0;
-}
-    <!-- About Section Start -->
-<section class="about">
-  <h2>About Me</h2>
-  <p>
-    Hi! I'm Rohit, a passionate developer learning web development step by step.
-    This is my first website, built with HTML and CSS.
-  </p>
-</section>
-<!-- About Section End -->
-    <main>
-
-    <div class="blog-container">
-
-
-      <div class="blog-card">
-        <img src="https://source.unsplash.com/400x250/?gaming,esports" alt="Learning Blogs">
-        <h3>🐍 Computer Programing Language Learning</h3>
-        <p>IS SITE PER AAP COMPUTER KE PROGRAMING LANGUAGE SIKH SAKTE HO</p>
-        <a href="#">FOR READ SCROWL DOWN</a>
-    </div>
-
-    </div>
-  </section>
-</main>
-    <h1>🌍 Learn With R_R</h1>
-    <nav>
-      <ul>
-        <li><a href="#python">Python</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>👋 Hi, I’m Rohit</h2>
-      <p>Welcome to <b>Learn With R_R</b> — 
-      I’m learning web development and building this site with pure HTML & CSS  .</p>
-    </div>
-    <div class="about-img"></div>
-  </div>
-</section>
-
-  </div>
-</section>
-<!-- Python Learning Section -->
-<section id="python-learning" class="section">
-  <h2>🐍 Python Language Learning</h2>
-  <p>Python एक आसान और शक्तिशाली programming language है, जो web development, AI, data science और automation में सबसे ज़्यादा इस्तेमाल होती है।</p>
-  <a href="python.html" class="read-more">Learn Python →</a>
-</section>
-
-<section id="javascript" class="blog-section">
-    <h2>🟨 JavaScript Language Learning</h2>
-    <p>JavaScript एक बहुत लोकप्रिय programming language है जो website में interactivity लाने के लिए इस्तेमाल होती है। इससे आप animations, dynamic content और responsive design बना सकते हैं।</p>
-    <p>JavaScript web development का एक बहुत जरूरी हिस्सा है क्योंकि इसके बिना वेबसाइट static रहती है।</p>
-    <a href="javascript-course.html" class="read-more">Learn JavaScript  →</a>
-</section>
-
-<section id="contact">
-  <h2>📬 Contact Me</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-  <footer>
-    <p>© 2025 Rohit’s World | All Rights Reserved</p>
-  </footer>
-  <button id="topBtn">⬆️</button>
-
-<script>
-  const topBtn = document.getElementById("topBtn");
-  window.onscroll = () => {
-    topBtn.style.display = window.scrollY > 300 ? "block" : "none";
-  };
-  topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
-</script>
+  <iframe src="https://rohit143ii.github.io/rohit-website/"></iframe>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
 </body>
 </html>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/rohit-website/service-worker.js');
+}
+</script>
